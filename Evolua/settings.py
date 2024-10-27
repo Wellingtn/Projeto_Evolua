@@ -39,8 +39,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'Login.apps.LoginConfig',
+    'login.apps.loginConfig',
+    'dashboard_aluno.apps.dashboard_alunoConfig', 
+    'dashboard_prof.apps.dashboard_profConfig',
+    'quiz.apps.quizConfig',
 ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
