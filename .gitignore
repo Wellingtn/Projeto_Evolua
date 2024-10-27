@@ -1,0 +1,68 @@
+# Sistema operacional
+*.DS_Store
+Thumbs.db
+
+# Arquivos Python
+*.pyc
+*.pyo
+__pycache__/
+*.pyd
+*.pdb
+
+# Virtualenv
+venv/
+.env/
+.venv/
+env/
+ENV/
+env.bak/
+.vscode/
+.idea/
+
+# Configurações de ambiente e credenciais
+*.env
+*.secret
+*.ini
+*.local
+
+# Arquivos de migração do Django
+**/migrations/*.py
+!**/migrations/__init__.py
+
+# Banco de dados local
+db.sqlite3
+db.sqlite3-journal
+
+# Arquivos de log
+*.log
+
+# Arquivos de compilação
+*.pot
+*.mo
+
+# Arquivos de configuração IDE
+*.swp
+*~
+
+# Configuração Celery
+celerybeat-schedule
+celerybeat.pid
+
+# Arquivos de cache
+.cache/
+__pycache__/
+
+# Arquivos de media e static gerados automaticamente
+media/
+staticfiles/
+
+# Arquivos relacionados ao coverage (cobertura de testes)
+htmlcov/
+.coverage
+.coverage.*
+
+# Relatório de erros do mypy
+.mypy_cache/
+
+# Arquivos relacionados ao pytest
+.pytest_cache/
