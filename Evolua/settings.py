@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'dashboard_aluno.apps.dashboard_alunoConfig', 
     'dashboard_prof.apps.dashboard_profConfig',
     'quiz.apps.quizConfig',
+    'cadastro.apps.CadastroConfig',
 ]
 
 
