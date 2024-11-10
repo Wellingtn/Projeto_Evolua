@@ -29,7 +29,7 @@ No Windows:
 .\venv\Scripts\activate
 Instale o Django e Outras Dependências
 
-pip install -r requirements.txt
+    pip install -r requirements.txt
 Configure o Banco de Dados Configure as credenciais de acesso ao PostgreSQL.
 
 Execute as Migrações

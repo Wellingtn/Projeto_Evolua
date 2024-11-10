@@ -15,7 +15,8 @@
         <h2>Login</h2>
         <p>Informe seu e-mail e senha para continuar.</p>
         <div class="form_button">
-            <form action="/login" method="post">
+            <form action="/dashboard_aluno/" method="post">
+                {% csrf_token %}
                 <input type="text" id="e-mail" name="e-mail" placeholder="E-mail" required>
                 <input type="password" id="senha" name="senha" placeholder="Senha" required>
                 <button type="submit">Entrar</button>
