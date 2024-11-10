@@ -10,7 +10,7 @@ from cadastro.views import cadastro
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("", include("login.urls")),
-    path("", login),
+    path("/login", login),
     path("dashboard_aluno/", dashboard_aluno),
     path("dashboard_prof/", dashprof),
     path("quiz/", quiz),
