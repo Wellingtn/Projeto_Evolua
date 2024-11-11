@@ -1,7 +1,6 @@
-@import url("style-guide.css");
+@import url("../../Projeto_Evolua/static/style-guide.css");
 
 body {
-<<<<<<< HEAD
     font-family: "Montserrat", sans-serif; 
     font-optical-sizing: auto; 
     font-weight: 400; 
@@ -10,12 +9,12 @@ body {
     height: 100vh; 
     padding: 0; 
     margin: 0; 
-    color: var(--white-primary); 
+    color: #ffffff; 
 }
 
 .left-side {
-    background: var(--primary); 
-    color: var(--white-primary); 
+    background: #172f4a;
+    color: #ffffff;
     padding: 20px; 
     width: 130%; 
     display: flex; 
@@ -29,17 +28,17 @@ body {
 input {
     width: 100%; 
     padding: 18px; 
-    border: 1px solid var(--white-secondary); 
+    border: 1px solid #dcdcdc;
     border-radius: 8px; 
     background-color: transparent; 
-    color: var(--white-primary); 
+    color: #ffffff;
     box-sizing: border-box; 
     font-size: var(--font-size-p2); 
     margin-bottom: 15px; 
 }
 
 input::placeholder {
-    color: var(--white-primary); 
+    color: #ffffff;
     opacity: 1; 
     font-family: "Montserrat", sans-serif; 
 }
@@ -47,8 +46,8 @@ input::placeholder {
 button {
     width: 100%; 
     padding: 8px; 
-    background-color: var(--white-primary); 
-    color: var(--primary); 
+    background-color: #ffffff;
+    color: #172f4a; 
     border: none; 
     border-radius: 20px; 
     cursor: pointer; 
@@ -82,59 +81,4 @@ img {
     width: 60%;
     margin-left: 160px;
 }
-    
 
-=======
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #b3d9ff; /* Fundo azul claro */
-    margin: 0;
-}
-.container {
-    width: 350px;
-    padding: 25px;
-    background-color: #ffffff;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
-    border-radius: 12px;
-}
-h2 {
-    text-align: center;
-    color: #333;
-    margin-bottom: 20px;
-}
-label {
-    font-size: 14px;
-    color: #333;
-}
-input[type="text"], input[type="email"], input[type="password"] {
-    width: 92%;
-    padding: 12px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 15px;
-}
-button {
-    width: 100%;
-    padding: 12px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s;
-}
-button:hover {
-    background-color: #45a049;
-}
-.message {
-    text-align: center;
-    margin-top: 15px;
-    color: green;
-    font-size: 14px;
-}
->>>>>>> 4e4e23e861d685ab3b8cf83a83072fa2a024f6d5
