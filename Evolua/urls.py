@@ -15,4 +15,5 @@ urlpatterns = [
     path("dashboard_prof/", dashprof),
     path("quiz/", quiz),
     path("cadastro/", cadastro),
+    path("cadastro/login/", login),
 ]

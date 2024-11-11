@@ -1,10 +1,84 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <title>Quiz</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../../static/quiz.css" media="screen" />
+    <title>FORMULÁRIO - EVOLUA</title>
 </head>
+
 <body>
-    <h1>Quiz</h1>
-    </form>
+    <header class="navbar">
+        <img src="../../../static/assets/evolua-logo-branco.svg" href="/home" alt="Evolua Logo">
+        <div class="links">
+            <button>Início</button>
+            <a href="../trilhas_formulario/index.html" class="button-link"></a>
+            <button>Trilhas</button>
+            <a href="../login/index.html" class="button-link">
+                <button>Sair</button>
+            </a>
+        </div>
+    </header>
+        <section class="container-topo">
+            <div class="titulo">
+                <h1>Quiz - Avaliação</h1>
+            </div>
+                <p>Este questionário busca entender as competências para determinar se você possui as características e habilidades ideais.</p>
+        </section>
+            <div class="container-perguntas">
+                <h2>Pilar 1: Trabalho</h2>
+                <div class="question">
+                    <p>1. Você está atualmente empregado?</p>
+                    <div class="options">
+                        <input type="radio" id="empregado-sim" name="empregado" value="Sim">
+                        <label for="empregado-sim">Sim</label>
+    
+                        <input type="radio" id="empregado-nao" name="empregado" value="Não">
+                        <label for="empregado-nao">Não</label>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>2. Você está satisfeito(a) no seu trabalho atual?</p>
+                    <div class="options">
+                        <input type="radio" id="satisfeito-sim" name="satisfeito" value="Sim">
+                        <label for="satisfeito-sim">Sim</label>
+    
+                        <input type="radio" id="satisfeito-nao" name="satisfeito" value="Não">
+                        <label for="satisfeito-nao">Não</label>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="container-perguntas">
+                <h2>Pilar 2: Estudo</h2>
+                <div class="question">
+                    <p>3. Você se considera uma pessoa com conhecimento em tecnologia?</p>
+                    <div class="options">
+                        <input type="radio" id="tecnologia-sim" name="tecnologia" value="Sim">
+                        <label for="tecnologia-sim">Sim</label>
+
+                        <input type="radio" id="tecnologia-nao" name="tecnologia" value="Não">
+                        <label for="tecnologia-nao">Não</label>
+                    </div>
+                </div>
+            </div>
+
+                <div class="container-perguntas">
+                    <div class="question">
+                        <p>4. Quais habilidades técnicas você tem que podem auxiliar na sua carreira?</p>
+                        <textarea name="habilidades" rows="3" placeholder="Descreva suas habilidades"></textarea>
+                    </div>
+                </div>
+
+        <div class="footer">
+            <p>&copy; 2024 Avaliação de Competências</p>
+        </div>
+
 </body>
 </html>
+
