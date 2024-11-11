@@ -1,0 +1,150 @@
+@import url("style-guide.css");
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  color: var(--white-primary);
+}
+
+/* Barra Lateral */
+.sidebar {
+  width: 250px;
+  background-color: var(--primary);
+  color: var(--white-primary);
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+.sidebar h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.sidebar a {
+  padding: 15px 20px;
+  text-decoration: none;
+  color: #ecf0f1;
+  font-size: 16px;
+  display: block;
+  transition: background 0.3s;
+}
+
+.sidebar a:hover {
+  background-color: #1657a1;
+}
+
+/* Área de Conteúdo */
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #ecf0f1;
+  overflow-y: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header .student-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header .student-info img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ccc; /* Espaço para a foto */
+}
+
+.header .student-info span {
+  font-size: 18px;
+  color: #2c3e50;
+}
+
+h1 {
+  font-size: 28px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.card-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  text-align: center;
+}
+
+.card h3 {
+  font-size: 20px;
+  color: #2c3e50;
+  margin: 10px 0;
+}
+
+.card p {
+  font-size: 14px;
+  color: #7f8c8d;
+}
+
+.chart-container {
+  margin: 20px 0;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 400px; /* Defina a largura desejada para a área do gráfico */
+  text-align: center;
+}
+
+#chart {
+  width: 100%;
+  height: 200px; /* Diminuindo a altura do gráfico */
+}
+
+.quiz-history {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-history h3 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #2c3e50;
+}
+
+.quiz-history ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.quiz-history li {
+  padding: 8px;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+.quiz-history li:last-child {
+  border-bottom: none;
+}
