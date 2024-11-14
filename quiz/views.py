@@ -1,4 +1,10 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 
 def quiz(request):
-    return render(request, "reqquiz/quiz.html")
+    
+    template_name="reqquiz/quiz.html"
+
+    
+    
+    
+    return render(request, template_name)

@@ -1,10 +1,106 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <title>Aluno</title>
-</head>
-<body>
-    <h1>Aluno</h1>
-    </form>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard do Aluno</title>
+    <link rel="stylesheet" href="../../../static/dash-aluno.css" />
+  </head>
+  <body>
+    <!-- Barra Lateral -->
+    <div class="sidebar">
+      <img
+        src="../../../static/assets/evolua-logo-branco.svg"
+        href="/home"
+        alt="Evolua Logo"
+      />
+      <a href="#overview">Visão Geral</a>
+      <a href="#semesters">Semestres</a>
+      <a href="#class">Turma</a>
+      <a href="../../../quiz/templates/reqquiz/quiz.html">Trilha de Aprendizagem</a>
+      <a href="#teachers">Professores</a>
+      <a href="#settings">Configurações</a>
+      <a href="../../../login/templates/reqlogin/login.html">Sair</a>
+    </div>
+
+    <!-- Conteúdo Principal -->
+    <div class="main-content">
+      <!-- Cabeçalho com o nome do aluno e foto -->
+      <div class="header">
+        <h1>Visão Geral</h1>
+        <div class="student-info">
+          <img src="caminho-para-foto.jpg" alt="Foto do Aluno" />
+          <span>Nome do Aluno</span>
+        </div>
+      </div>
+
+      <!-- Cards com dados do aluno -->
+      <div class="card-container">
+        <div class="card">
+          <h3>Progresso</h3>
+          <p>75%</p>
+        </div>
+        <div class="card">
+          <h3>Quizzes Respondidos</h3>
+          <p>12</p>
+        </div>
+        <div class="card">
+          <h3>Atividades Pendentes</h3>
+          <p>3</p>
+        </div>
+        <div class="card">
+          <h3>Nota Média</h3>
+          <p>8.5</p>
+        </div>
+      </div>
+
+      <!-- Gráfico de exemplo -->
+      <div class="chart-container">
+        <h3>Desempenho</h3>
+        <canvas id="chart"></canvas>
+      </div>
+
+      <!-- Histórico de quizzes respondidos -->
+      <div class="quiz-history">
+        <h3>Histórico de Quizzes</h3>
+        <ul>
+          <li>Trabalho - Nota: 8</li>
+          <li>Estudo - Nota: 7</li>
+          <li>Alta Moralidade - Nota: 9</li>
+          <li>Internacionalidade - Nota: 8</li>
+          <li>FOIL - Nota: 10</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Script para o gráfico (exemplo com Chart.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+      const ctx = document.getElementById("chart").getContext("2d");
+      const chart = new Chart(ctx, {
+        type: "line", // Tipo de gráfico
+        data: {
+          labels: ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho"], // Meses de exemplo
+          datasets: [
+            {
+              label: "Nota Média por Mês",
+              data: [7, 8, 6, 9, 8, 8.5], // Dados de exemplo
+              borderColor: "rgba(75, 192, 192, 1)",
+              borderWidth: 2,
+              fill: false,
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          scales: {
+            y: {
+              beginAtZero: true,
+              max: 10,
+            },
+          },
+        },
+      });
+    </script>
+  </body>
 </html>

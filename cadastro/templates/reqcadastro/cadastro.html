@@ -1,10 +1,39 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <title>Cadastro</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../../static/cadastro.css" media="screen" />
+    <title>Cadastro - Evolua</title>
 </head>
 <body>
-    <h1>Cadastro</h1>
-    </form>
+    <div class="left-side">
+        <h2>Cadastro</h2>
+        <p>Informe seus dados para continuar.</p>
+        <div class="form_button">
+            <form action="/login" method="post">
+                <div class="inputs-curtos">
+                    <input type="text" id="Nome" name="nome" placeholder="Nome" required>
+                    <input type="text" id="Sobrenome" name="sobrenome" placeholder="Sobrenome" required>
+                    <input type="text" id="RA" name="ra" placeholder="RA" required>
+                    <input type="text" id="Semestre" name="semestre" placeholder="Semestre" required>
+                </div>
+                <div class="inputs-largos">
+                    <input type="text" id="Curso" name="curso" placeholder="Curso" required>
+                    <input type="text" id="e-mail" name="e-mail" placeholder="E-mail" required>
+                    <input type="password" id="senha" name="senha" placeholder="Senha" required>
+                    <button type="submit">Cadastrar</button>
+                </div>
+            </form>
+        </div>
+        <p>Já tem conta? <a href="login/" style="color: var(--white-primary); font-weight: 800;">Login</a></p>
+    </div>
+
+    <div class="right-side">
+        <img src="../../../static/assets/imagem-cadastro-right.jpg" alt="Imagem de cadastro lado direito da tela">
+    </div>
 </body>
 </html>

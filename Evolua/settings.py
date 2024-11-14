@@ -59,6 +59,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    
 ]
 
 ROOT_URLCONF = 'Evolua.urls'
@@ -133,3 +134,9 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+LOGIN_SUCESS_URL = "dashboard_aluno"
+AUTHENTICATION_BACKENDS = [
+    'login.authentication.EmailBackend',
+    'django.contrib.auth.backends.ModelBackend', 
+]
