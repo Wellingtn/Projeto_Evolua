@@ -1,4 +1,4 @@
-@import url("../../Projeto_Evolua/static/style-guide.css");
+@import url("/static/style-guide.css");
 
 body {
     font-family: "Montserrat", sans-serif; 
@@ -9,20 +9,18 @@ body {
     height: 100vh; 
     padding: 0; 
     margin: 0; 
-    color: #ffffff; 
+    color: var(--white-primary); 
 }
 
 .left-side {
-    background: #172f4a;
-    color: #ffffff;
+    background: var(--primary);
+    color: var(--white-primary);
     padding: 20px; 
-    width: 130%; 
+    width: 120%; 
     display: flex; 
     flex-direction: column; 
     justify-content: center; 
     align-items: center; 
-    
-
 }
 
 input {
@@ -31,14 +29,14 @@ input {
     border: 1px solid #dcdcdc;
     border-radius: 8px; 
     background-color: transparent; 
-    color: #ffffff;
+    color: var(--white-primary);
     box-sizing: border-box; 
     font-size: var(--font-size-p2); 
     margin-bottom: 15px; 
 }
 
 input::placeholder {
-    color: #ffffff;
+    color: var(--white-primary);
     opacity: 1; 
     font-family: "Montserrat", sans-serif; 
 }
@@ -46,8 +44,8 @@ input::placeholder {
 button {
     width: 100%; 
     padding: 8px; 
-    background-color: #ffffff;
-    color: #172f4a; 
+    background-color: var(--white-primary);
+    color: var(--primary); 
     border: none; 
     border-radius: 20px; 
     cursor: pointer; 
@@ -56,8 +54,7 @@ button {
     box-sizing: border-box; 
 }
 
-.right-side,
-img {
+.right-side, img {
     display: flex; 
     align-items: center; 
     height: 100%; 
@@ -77,8 +74,33 @@ img {
     width: 30%;
 }
 
+#Curso{
+    width: 30%;
+    margin-left: 160px;
+}
+#Professor{
+    width: 30%;
+}
+
 .inputs-largos{
     width: 60%;
     margin-left: 160px;
 }
 
+select {
+    width: 50%; 
+    padding: 18px; 
+    border: 1px solid #dcdcdc;
+    border-radius: 8px; 
+    background-color: transparent; 
+    color: var(--white-primary);
+    box-sizing: border-box; 
+    font-size: var(--font-size-p2); 
+    margin-bottom: 15px; 
+  }
+  
+  select option {
+    font-size: var(--font-size-p2);
+    background-color: var(--primary);
+    color: var(--white-primary);
+  }

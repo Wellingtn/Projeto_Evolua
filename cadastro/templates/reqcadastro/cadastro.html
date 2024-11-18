@@ -19,17 +19,37 @@
                     <input type="text" id="Nome" name="nome" placeholder="Nome" required>
                     <input type="text" id="Sobrenome" name="sobrenome" placeholder="Sobrenome" required>
                     <input type="text" id="RA" name="ra" placeholder="RA" required>
-                    <input type="text" id="Semestre" name="semestre" placeholder="Semestre" required>
+
+                    <select id="Semestre" name="semestre" required>
+                        <option value="" disabled selected>Selecione o semestre</option>
+                        <option value="1">1° semestre</option>
+                        <option value="2">2° semestre</option>
+                        <option value="3">3° semestre</option>
+                        <option value="4">4° semestre</option>
+                        <option value="5">5° semestre</option>
+                        <option value="6">6° semestre</option>
+                        <option value="7">7° semestre</option>
+                        <option value="8">8° semestre</option>
+                    </select>
+
+                    <input type="text" id="Curso" name="curso" placeholder="Curso" required>
+
+                        <select id="Professor" name="professor" required>
+                        <option value="" disabled selected>Selecione o professor</option>
+                        <option value="Gustavo Florêncio">Gustavo Florêncio</option>
+                        <option value="Patrícia Wazlawick">Patrícia Wazlawick</option>
+                        <option value="Gustavo Bernadini">Gustavo Bernadini</option>
+                        <option value="Jocássio Guidetti">Jocássio Guidetti</option>
+                    </select>
                 </div>
                 <div class="inputs-largos">
-                    <input type="text" id="Curso" name="curso" placeholder="Curso" required>
                     <input type="text" id="e-mail" name="e-mail" placeholder="E-mail" required>
                     <input type="password" id="senha" name="senha" placeholder="Senha" required>
                     <button type="submit">Cadastrar</button>
                 </div>
             </form>
         </div>
-        <p>Já tem conta? <a href="login/" style="color: var(--white-primary); font-weight: 800;">Login</a></p>
+        <p>Já tem conta? <a href="/" style="color: var(--white-primary); font-weight: 800;">Login</a></p>
     </div>
 
     <div class="right-side">

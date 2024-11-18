@@ -93,6 +93,18 @@ DATABASES = {
     }
 }
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': ' dev_trilhas_db',  # Nome do banco de dados
+#         'USER': 'dev_trilhas_db_owner',        # Usuário do banco de dados
+#         'PASSWORD': 'IigHD2Yesr1u',      # Senha do banco de dados
+#         'HOST': 'ep-sparkling-violet-a410q1gs.us-east-1.aws.neon.tech',      # Host do banco de dados (use o IP se não for local)
+#         'PORT': '5432',           # Porta do PostgreSQL (5432 é o padrão)
+#     }
+# }
+
+
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
