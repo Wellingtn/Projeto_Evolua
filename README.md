@@ -5,6 +5,7 @@ Tecnologias Utilizadas
 Backend: Python com Django e Jinja
 Frontend: HTML e CSS
 Banco de Dados: PostgreSQL
+
 Pré-requisitos
 Antes de começar, você precisará ter:
 
@@ -15,7 +16,7 @@ Ambiente virtual para rodar o Django
 Passo a Passo de Instalação
 
 Clone o Repositório
-git clone <URL_DO_REPOSITORIO>
+git clone git@github.com:Wellingtn/Projeto_Evolua.git
 cd evolua
 
 Crie o Ambiente Virtual
@@ -29,20 +30,17 @@ No Windows:
 .\venv\Scripts\activate
 Instale o Django e Outras Dependências
 
+<<<<<<< HEAD
+pip install -r requirements.txt
+=======
     pip install -r requirements.txt
 Configure o Banco de Dados Configure as credenciais de acesso ao PostgreSQL.
+>>>>>>> 83a33aef78d33bd3a7f659863c3ac4069a54451b
 
+Configure o Banco de Dados Configure as credenciais de acesso ao PostgreSQL.
 Execute as Migrações
 python manage.py migrate
 
 Inicie o Servidor
 python manage.py runserver
 
-Funcionalidades:
-Alunos respondem quizzes para identificar suas vocações.
-Professores podem verificar os resultados dos quizzes para entender as preferências da turma.
-Contribuição
-Contribuições são bem-vindas! Se você deseja contribuir para o projeto, por favor, siga o processo de pull requests.
-
-Contato
-Para dúvidas ou feedback, entre em contato pelo WhatsApp: (55)99979775
