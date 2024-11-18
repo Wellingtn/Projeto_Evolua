@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<<<<<<< HEAD
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,65 +17,13 @@
       <a href="/dashboard_professor/">Visão Geral</a>
       <a href="/">Sair</a>
     </div>
-=======
-<head>
-    <meta charset="UTF-8">
-    <title>Dashboard do Professor</title>
-</head>
-<body>
-    <h1>Bem-vindo ao seu Dashboard, Professor!</h1>
-
-    <h2>Desempenho da Turma</h2>
-    <table>
-        <tr>
-            <th>Pilar</th>
-            <th>Descrição</th>
-            <th>Pontos</th>
-            <th>%</th>
-            <th>Nível</th>
-        </tr>
-        {% for pilar in pilares %}
-        <tr>
-            <td>{{ pilar.nome }}</td>
-            <td>{{ pilar.descricao }}</td>
-            <td>{{ pilar.pontos }}</td>
-            <td>{{ pilar.porcentagem }}</td>
-            <td>{{ pilar.nivel }}</td>
-        </tr>
-        {% endfor %}
-    </table>
-
-    <h2>Desempenho do Aluno</h2>
-    <table>
-        <tr>
-            <th>Nome</th>
-            <th>Matrícula</th>
-            <th>Semestre</th>
-            <th>Curso</th>
-            <th>Detalhes</th>
-            <th>Exportar PDF</th>
-        </tr>
-        {% for aluno in alunos %}
-        <tr>
-            <td>{{ aluno.nome }}</td>
-            <td>{{ aluno.matricula }}</td>
-            <td>{{ aluno.semestre }}</td>
-            <td>{{ aluno.curso }}</td>
-            <td><a href="{% url 'detalhes_aluno' aluno.id %}">Ver detalhes</a></td>
-            <td><a href="{% url 'exportar_pdf_aluno' aluno.id %}">Exportar PDF</a></td>
-        </tr>
-        {% endfor %}
-    </table>
-</body>
-</html>
->>>>>>> 312148667b5592c89c92b1ffe4e4e20bb5cf74a2
 
     <!-- Conteúdo Principal -->
     <div class="main-content">
       <div class="header">
         <h1>Visão Geral</h1>
         <div class="teacher-info">
-          <span>PROFESSOR(A): </span>
+          <span>Professor(A): </span>
           <h3>João Silva</h3>
         </div>
       </div>

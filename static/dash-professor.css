@@ -52,6 +52,7 @@ body {
   padding: 20px;
   background-color: var(--white-secondary);
   overflow-y: auto;
+  
 }
 
 .header {
@@ -61,13 +62,14 @@ body {
   margin-bottom: 20px;
 }
 
-.header .student-info {
+.header .teacher-info {
   display: flex;
   align-items: center;
   gap: 10px;
+
 }
 
-.header .student-info span h3 {
+.header .teacher-info span h3 {
   background-color: var(--primary);
   font-size: 18px;
   padding: 10px 20px 10px 20px;
