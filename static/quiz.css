@@ -123,11 +123,95 @@ label {
 
 }
 
-.question {
+.question-trabalho {
+    display: flex;
+    flex-direction: column;
+    margin-left: -500px;
+    padding: 0px;
+    background-color: var(--white-primary);
+    color: var(--primary);
+}
+
+.question-trabalho2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: -420px;
+    padding: 0px;
+    background-color: var(--white-primary);
+    color: var(--primary);  
+}
+
+.question-estudo{
+    display: flex;
+    flex-direction: column;
+    margin-left: -240px;
+    padding: 0px;
+    background-color: var(--white-primary);
+    color: var(--primary);
+}
+
+.question-estudo2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: -190px;
+    padding: 0px;
+    background-color: var(--white-primary);
+    color: var(--primary);
+
+}
+
+.question-moralidade {
+    display: flex;
+    flex-direction: column;
+    margin-left: -340px;
+    padding: 0px;
+    background-color: var(--white-primary);
+    color: var(--primary);
+}
+
+.question-moralidade2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: -195px;
+    padding: 0px;
+    background-color: var(--white-primary);
+    color: var(--primary);
+}
+
+.question-internacionalidade {
+    display: flex;
+    flex-direction: column;
+    margin-left: -460px;
+    padding: 0px;
+    background-color: var(--white-primary);
+    color: var(--primary);
+}
+
+.question-internacionalidade2 {
     display: flex;
     text-align: center;
     align-items: center;
-    margin: 0px;
+    margin-left: -255px;
+    padding: 0px;
+    background-color: var(--white-primary);
+    color: var(--primary);
+}
+
+.question-foil{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-left: -250px;
+    padding: 0px;
+    background-color: var(--white-primary);
+    color: var(--primary);
+}
+
+.question-foil2{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-left: 250px;
     padding: 0px;
     background-color: var(--white-primary);
     color: var(--primary);
@@ -154,9 +238,9 @@ label {
     font-size: 1em;
 }
 
-.question .options {
+option{
     display: flex;
-    align-items: center;
+    flex-direction: column;
 }
 
 
