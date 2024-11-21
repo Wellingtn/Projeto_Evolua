@@ -18,18 +18,23 @@ body {
     padding: 20px 50px 20px 100px;
 }
 
-.links {
-    padding: 2px 80px 20px 50px;
+.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 700;
+    text-align: center;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
-.links button {
-    background: none;
-    color: var(--white-primary);
-    border: none;
-    margin-left: 20px;
-    font-size: 16px;
-    cursor: pointer;
-   
+.button-link:hover {
+    background-color: #FFF; 
+    color: #00264d;
+    border-radius: 8px;
+    transform: scale(1.05); 
 }
 
 .container-topo{

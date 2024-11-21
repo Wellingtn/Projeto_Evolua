@@ -9,11 +9,9 @@ from cadastro.views import cadastro
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    #path("", include("login.urls")),
-    path("", login),
-    path("dashboard_aluno/", dashboard_aluno),
-    path("dashboard_prof/", dashprof),
-    path("quiz/", quiz),
-    path("cadastro/", cadastro),
-    path("cadastro/login/", login),
+    path("", login, name="login"), 
+    path("dashboard_aluno/", dashboard_aluno, name="dashboard_aluno"),
+    path("dashboard_prof/", dashprof, name="dashboard_prof"),
+    path("quiz/", quiz, name="quiz"),
+    path("cadastro/", cadastro, name="cadastro"), 
 ]

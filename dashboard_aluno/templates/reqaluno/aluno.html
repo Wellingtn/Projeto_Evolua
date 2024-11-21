@@ -4,33 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard do Aluno</title>
-    <link rel="stylesheet" href="../../../static/dash-aluno.css" />
+    <link rel="stylesheet" type="text/css" href="../../../static/dash-aluno.css" media="screen" />
   </head>
   <body>
     <!-- Barra Lateral -->
     <div class="sidebar">
       <img
         src="../../../static/assets/evolua-logo-branco.svg"
-        href="/home"
+        href="/dashboard_aluno/"
         alt="Evolua Logo"
       />
-      <a href="#overview">Visão Geral</a>
-      <a href="#semesters">Semestres</a>
-      <a href="#class">Turma</a>
-      <a href="../../../quiz/templates/reqquiz/quiz.html">Trilha de Aprendizagem</a>
-      <a href="#teachers">Professores</a>
-      <a href="#settings">Configurações</a>
-      <a href="../../../login/templates/reqlogin/login.html">Sair</a>
+      <a href="/dashboard_aluno/">Visão Geral</a>
+      <a href="#semestre">Semestres</a>
+      <a href="/quiz/">Trilha de Aprendizagem</a>
+      <a href="/">Sair</a>
     </div>
 
     <!-- Conteúdo Principal -->
     <div class="main-content">
-      <!-- Cabeçalho com o nome do aluno e foto -->
       <div class="header">
         <h1>Visão Geral</h1>
         <div class="student-info">
-          <img src="caminho-para-foto.jpg" alt="Foto do Aluno" />
-          <span>Nome do Aluno</span>
+          <span>ALUNO(A): </span>
+          <h3>Fernanda Soares</h3>
         </div>
       </div>
 
@@ -54,22 +50,57 @@
         </div>
       </div>
 
-      <!-- Gráfico de exemplo -->
-      <div class="chart-container">
-        <h3>Desempenho</h3>
-        <canvas id="chart"></canvas>
+      <!-- Container do gráfico e quiz -->
+      <div class="content-container">
+        <!-- Gráfico de exemplo -->
+        <div class="chart-container">
+          <h3>Desempenho</h3>
+          <canvas id="chart"></canvas>
+        </div>
+        <!-- Histórico de quizzes respondidos -->
+        <div class="quiz-history">
+          <h3>Histórico de Quizzes</h3>
+          <div class="quiz-item">
+            <span>Trabalho</span><span>Nota: 8</span>
+          </div>
+          <div class="quiz-item">
+            <span>Estudo</span><span>Nota: 7</span>
+          </div>
+          <div class="quiz-item">
+            <span>Alta Moralidade</span><span>Nota: 9</span>
+          </div>
+          <div class="quiz-item">
+            <span>Internacionalidade</span><span>Nota: 8</span>
+          </div>
+          <div class="quiz-item">
+            <span>FOIL</span><span>Nota: 10</span>
+          </div>
+        </div>
       </div>
 
-      <!-- Histórico de quizzes respondidos -->
-      <div class="quiz-history">
-        <h3>Histórico de Quizzes</h3>
-        <ul>
-          <li>Trabalho - Nota: 8</li>
-          <li>Estudo - Nota: 7</li>
-          <li>Alta Moralidade - Nota: 9</li>
-          <li>Internacionalidade - Nota: 8</li>
-          <li>FOIL - Nota: 10</li>
-        </ul>
+      <!-- Pilares FOIL -->
+      <div class="foil-container">
+        <h2>Pilares FOIL</h2>
+        <div class="valores-foil">
+          <p1>Trabalho</p1>
+          <p>Refere-se à importância de aplicar esforço prático para realizar objetivos. Através do trabalho, você aprende a se comprometer, assumir responsabilidades e desenvolver habilidades essenciais para crescer tanto pessoal quanto profissionalmente.</p>
+        </div>
+        <div class="valores-foil">
+          <p1>Estudo</p1>
+          <p>Representa o desenvolvimento contínuo do conhecimento e da inteligência. O estudo amplia suas capacidades técnicas e humanísticas, ajudando na resolução de problemas e na inovação, fundamentais para sua atuação no mercado e na sociedade.</p>
+        </div>  
+        <div class="valores-foil">
+          <p1>Alta Moralidade</p1>
+          <p>Envolve agir com ética, integridade e respeito pelos outros. A alta moralidade significa tomar decisões que não apenas beneficiam você, mas também o coletivo, sempre respeitando princípios elevados em todas as suas ações.</p>
+        </div>
+        <div class="valores-foil">
+          <p1>Internacionalidade</p1>
+          <p>Envolve a abertura para novas culturas e formas de pensamento. A internacionalidade te prepara para atuar em um mundo globalizado, promovendo o intercâmbio de ideias e experiências que ampliam suas perspectivas e oportunidades.</p>
+        </div>
+        <div class="valores-foil">
+          <p1>FOIL</p1>
+          <p>Refere-se ao desenvolvimento da capacidade de compreensão e aplicação de conhecimentos interdisciplinares. Este pilar liga o indivíduo às suas experiências e ao mundo, permitindo uma formação integral que favorece a inovação e a solução criativa de problemas.</p>
+        </div>
       </div>
     </div>
 
